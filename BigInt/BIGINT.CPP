@@ -48,10 +48,7 @@ bool BigInt::operator!=(const BigInt& i2) const
 {
     if (digits.size() != i2.digits.size()) return true;
     if (is_neg != i2.is_neg) return true;
-    for (int i = 0; i < digits.size(); i++)
-        if (digits[i] != i2.digits[i])
-            return true;
-    return false;
+    
 
 }
 
